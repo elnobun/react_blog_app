@@ -3,7 +3,7 @@
 
 [![Standard][Standard]](http://standardjs.com)
 
-## Usage:
+## Starting The Application:
 
 Server and Client runs concurently [Together].
 All you need do is:
