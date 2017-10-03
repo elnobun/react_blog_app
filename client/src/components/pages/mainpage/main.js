@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {Divider} from 'semantic-ui-react'
-import SiteHeader from '../../header'
+import PageHeader from '../../header'
 import SiteFooter from '../../footer'
 import MainpageControls from './filters'
 import MainpagePosts from './posts'
@@ -31,7 +31,7 @@ class Mainpage extends Component {
     return (
       <div>
         <Divider hidden />
-        <SiteHeader params={this.props.match.params} />
+        <PageHeader params={this.props.match.params} />
         <MainpageControls />
         <Divider hidden />
         <MainpagePosts />

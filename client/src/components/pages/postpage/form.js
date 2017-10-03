@@ -4,7 +4,7 @@ import { compose } from 'recompose'
 import { Formik } from 'formik'
 import { filter, isEmpty } from 'lodash'
 import yup from 'yup'
-import { Button, Form, TextArea, Message } from 'semantic-ui-react'
+import {Button, Form, TextArea, Message, Icon} from 'semantic-ui-react'
 import { createPostCommentAsync, editPostCommentAsync } from '../../../actions/comments'
 
 class CreateCommentForm extends Component {
@@ -35,7 +35,7 @@ class CreateCommentForm extends Component {
             <Message negative>
               <Message.Header>Oops!</Message.Header>
                 {displayErrors.map(error => (
-                  <p key={error}>{error}</p>
+                  <p key={error}><Icon name='close'/>{error}</p>
                 ))}
             </Message>
           )}

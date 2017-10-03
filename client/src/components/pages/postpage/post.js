@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
-import { Container, Grid, Header, Message, Divider } from 'semantic-ui-react'
+import {Container, Grid, Header, Message, Divider, Icon} from 'semantic-ui-react'
 import {isEmpty} from 'lodash'
 import PageHeader from '../../header'
 import SiteFooter from '../../footer'
@@ -54,7 +54,8 @@ class Post extends Component {
             <Grid centered>
               <Grid.Column width={12}>
                 <div>
-                  <Header as='h2'>Title: {post.title}</Header>
+                  <Header as='h2'><Icon name='file outline'/>Title: {post.title}</Header>
+
                   {post.body && (
                     <div
                       dangerouslySetInnerHTML={{__html: marked(post.body)}}

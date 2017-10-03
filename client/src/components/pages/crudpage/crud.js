@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
 import { Container, Divider } from 'semantic-ui-react'
 import {fetchPostAsync, createPostAsync, editPostAsync} from '../../../actions/post'
-import SiteHeader from '../../header'
+import PageHeader from '../../header'
 import CrudpageForm from './form'
 
 class CrudPage extends Component {
@@ -54,7 +54,7 @@ class CrudPage extends Component {
     return (
       <div>
         <Divider hidden/>
-        <SiteHeader params={this.props.match.params} />
+        <PageHeader params={this.props.match.params} />
         <Container>
           <CrudpageForm
             categories={categories}
