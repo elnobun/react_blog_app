@@ -1,4 +1,4 @@
-# Readable: A Content And Comment Management App
+# React/Redux Readable Blog App: A Content And Comment Management App
 ## A React Nanodegree Project 
 
 [![Standard][Standard]](http://standardjs.com)
