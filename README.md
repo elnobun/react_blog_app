@@ -24,5 +24,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project was made possible by various assistance from the `Udacity Slack Community`, `Friends`,  `Live Help Sessions`
 and `Mentorship`.
 
+[Standard]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
 
 ...Detailed README is coming soon!!!
