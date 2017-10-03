@@ -94,7 +94,7 @@ const formikConfig = {
   handleSubmit: (payload, {props, setSubmitting, resetForm}) => {
     const createComment = ({body, author}) => {
       const parentId = props.post.id;
-      return props.createPostComment({body, author, parentId})
+      return props.createPostCommentAsync({body, author, parentId})
     };
 
     const editComment = ({body, author}) => {
@@ -125,6 +125,5 @@ const formikConfig = {
 
 const mapStateToProps = ({post}) => ({post});
 const mapDispatchToProps = {createPostCommentAsync, editPostCommentAsync};
-const enhance = compose(
-  connect(mapStateToProps, mapDispatchToProps), Formik(formikConfig));
+const enhance = compose(connect(mapStateToProps, mapDispatchToProps), Formik(formikConfig));
 export default enhance(CreateCommentForm)
