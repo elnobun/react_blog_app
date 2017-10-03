@@ -24,13 +24,23 @@ export function fetchCategoryPostsAsync (category) {
 }
 
 export function sortPosts (sortBy) {
-  return {type: SORT_POSTS, sortBy}
+  return {
+    type: SORT_POSTS,
+    sortBy
+  }
 }
 
 function fetchPosts (data) {
-  return {type: FETCH_POSTS, data}
+  return {
+    type: FETCH_POSTS,
+    data
+  }
 }
 
 function fetchCategoryPosts (category, data) {
-  return {type: FETCH_CATEGORY_POSTS, data}
+  return {
+    type: FETCH_CATEGORY_POSTS,
+    category,
+    data
+  }
 }
