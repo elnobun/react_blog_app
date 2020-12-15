@@ -33,7 +33,7 @@
     "cors": "2.8.4",
     "date-fns": "1.28.5",
     "dotenv": "4.0.0",
-    "ecstatic": "3.0.0",
+    "ecstatic": "4.1.4",
     "eslint": "4.6.0",
     "eslint-config-standard": "10.2.1",
     "eslint-config-standard-jsx": "4.0.2",
